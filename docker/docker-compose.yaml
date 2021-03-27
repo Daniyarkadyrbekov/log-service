@@ -1,0 +1,121 @@
+version: '3.4'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - logs
+    volumes:
+      - type: volume
+        source: elasticsearch
+        target: /usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M
+        reservations:
+          cpus: '1'
+          memory: 500M
+    # healthcheck:
+    #   test: curl -s http://0.0.0.0:9200 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 5
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.6.2
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    networks:
+      - logs
+    depends_on:
+      - elasticsearch
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M
+        reservations:
+          cpus: '1'
+          memory: 500M
+    # healthcheck:
+    #   test: curl -s http:///0.0.0.0:5601 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 5
+
+#  fluentd:
+#    image: fluentd:1.0.0-local
+#    command: /opt/td-agent/embedded/bin/fluentd
+#    ports:
+#      - "5000:5000"
+#    volumes:
+#      - type: bind
+#        source: ./fluentd/fluent.conf
+#        target: /etc/fluent/fluent.conf
+#        read_only: true
+#    networks:
+#      - logs
+#    depends_on:
+#      - elasticsearch
+#    deploy:
+#      resources:
+#        limits:
+#          cpus: '0.5'
+#          memory: 50M
+#        reservations:
+#          cpus: '0.5'
+#          memory: 100M
+
+  # alternative for fluentd:
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.6.2
+    volumes:
+      - type: bind
+        source: ./logstash/config/logstash.yml
+        target: /usr/share/logstash/config/logstash.yml
+        read_only: true
+      - type: bind
+        source: ./logstash/pipeline
+        target: /usr/share/logstash/pipeline
+        read_only: true
+    ports:
+      - "5000:5000/tcp"
+      - "5000:5000/udp"
+      - "9600:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - logs
+    depends_on:
+      - elasticsearch
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M
+        reservations:
+          cpus: '1'
+          memory: 500M
+    healthcheck:
+      test: bin/logstash -t
+      interval: 60s
+      timeout: 50s
+      retries: 5
+
+volumes:
+  elasticsearch:
+
+networks:
+  logs:
+    driver: bridge
