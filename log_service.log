@@ -1,0 +1,5 @@
+2021-03-28T15:10:22.591+0300	INFO	kafka consumer	kafka/source.go:71	starting consumption
+2021-03-28T15:20:18.131+0300	INFO	kafka consumer	kafka/source.go:71	starting consumption
+2021-03-28T15:22:31.511+0300	INFO	kafka consumer	kafka/source.go:71	starting consumption
+2021-03-28T15:22:34.724+0300	DEBUG	kafka consumer	kafka/source.go:105	Consumed message
+2021-03-28T15:22:34.780+0300	DEBUG	kafka consumer	kafka/source.go:128	req result	{"res": "[201 Created] {\"_index\":\"test_index2\",\"_type\":\"_doc\",\"_id\":\"5226667580283983246\",\"_version\":1,\"result\":\"created\",\"forced_refresh\":true,\"_shards\":{\"total\":2,\"successful\":1,\"failed\":0},\"_seq_no\":2,\"_primary_term\":1}"}

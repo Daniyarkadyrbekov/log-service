@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="084cdf08-d96c-4811-af2f-c55823f8c62a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +37,8 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/logstash" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/kafka" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,12 +48,65 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/kafka" />
+      <recent name="$PROJECT_DIR$/docker/logstash" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docker/logstash" />
-    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestWritingLogs in github.com/log-service (2)">
+    <configuration name="go build github.com/log-service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWritingLogs in github.com/log-service (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWritingLogs\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWritingLogs in github.com/log-service (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWritingLogs\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWritingLogs in github.com/log-service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWritingLogs\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (2)" />
+        <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (1)" />
+        <item itemvalue="Go Test.TestWritingLogs in github.com/log-service" />
+        <item itemvalue="Go Build.go build github.com/log-service" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,10 +121,34 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="375" y="229" width="689" height="671" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1616614205278" />
+    <state width="1398" height="217" key="GridCell.Tab.0.bottom" timestamp="1616934017430">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="217" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616934017430" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1616887920901" />
+    <state width="1398" height="217" key="GridCell.Tab.0.center" timestamp="1616934017429">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="217" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616934017429" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1616887920899" />
+    <state width="1398" height="217" key="GridCell.Tab.0.left" timestamp="1616934017428">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="217" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616934017428" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1616887920898" />
+    <state width="1398" height="217" key="GridCell.Tab.0.right" timestamp="1616934017430">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="217" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616934017430" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1616887920900" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1616614207086">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1616614207086" />
+    <state x="421" y="219" width="597" height="490" key="find.popup" timestamp="1616888312723">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="219" width="597" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1616888312723" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1616871670173">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

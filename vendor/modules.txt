@@ -1,0 +1,30 @@
+# github.com/confluentinc/confluent-kafka-go v1.6.1
+## explicit
+github.com/confluentinc/confluent-kafka-go/kafka
+github.com/confluentinc/confluent-kafka-go/kafka/librdkafka_vendor
+# github.com/elastic/go-elasticsearch/v8 v8.0.0-20210317102009-a9d74cec0186
+## explicit
+github.com/elastic/go-elasticsearch/v8
+github.com/elastic/go-elasticsearch/v8/esapi
+github.com/elastic/go-elasticsearch/v8/estransport
+github.com/elastic/go-elasticsearch/v8/internal/version
+# github.com/hashicorp/errwrap v1.0.0
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-multierror v1.1.1
+## explicit
+github.com/hashicorp/go-multierror
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# go.uber.org/atomic v1.6.0
+go.uber.org/atomic
+# go.uber.org/multierr v1.5.0
+go.uber.org/multierr
+# go.uber.org/zap v1.16.0
+## explicit
+go.uber.org/zap
+go.uber.org/zap/buffer
+go.uber.org/zap/internal/bufferpool
+go.uber.org/zap/internal/color
+go.uber.org/zap/internal/exit
+go.uber.org/zap/zapcore

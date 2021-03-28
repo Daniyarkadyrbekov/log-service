@@ -1,0 +1,11 @@
+requests-topic: "log-service-request-topic"
+es-address: "http://localhost:9200"
+brokers:
+  - localhost:9092
+group-id: "log-service"
+config:
+  session-timeout-ms: 60000
+  fetch-wait-max-ms: 10ms
+  fetch-min-bytes: 1024
+  auto-offset-reset: earliest
+poll-timeout-ms: 100
