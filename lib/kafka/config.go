@@ -11,6 +11,7 @@ import (
 
 type Config struct {
 	RequestsTopic string          `mapstructure:"requests-topic"`
+	IndexName     string          `mapstructure:"index-name"`
 	EsAddress     string          `mapstructure:"es-address"`
 	Brokers       []string        `mapstructure:"brokers"`
 	GroupID       string          `mapstructure:"group-id"`
@@ -47,6 +48,9 @@ func (c *Config) Check() error {
 	}
 	if len(c.RequestsTopic) == 0 {
 		err = multierror.Append(err, errors.New("`requests-topic` should not be empty"))
+	}
+	if len(c.IndexName) == 0 {
+		err = multierror.Append(err, errors.New("`index-name` should not be empty"))
 	}
 	if len(c.GroupID) == 0 {
 		err = multierror.Append(err, errors.New("`group-id` should not be empty"))

@@ -57,12 +57,12 @@ func Run(ctx context.Context, log *zap.Logger, config *Config) error {
 		return err
 	}
 
-	go consumerLoop(ctx, log.Named("kafka consumer"), consumer, config.PollTimeoutMs, client)
+	go consumerLoop(ctx, log.Named("kafka consumer"), consumer, config, client)
 
 	return nil
 }
 
-func consumerLoop(ctx context.Context, log *zap.Logger, consumer *kafka.Consumer, pollTimeoutMs int, client *elasticsearch.Client) {
+func consumerLoop(ctx context.Context, log *zap.Logger, consumer *kafka.Consumer, cfg *Config, client *elasticsearch.Client) {
 
 	defer consumer.Close()
 
@@ -115,7 +115,7 @@ func consumerLoop(ctx context.Context, log *zap.Logger, consumer *kafka.Consumer
 				}
 
 				req := esapi.IndexRequest{
-					Index:      "test_index2",
+					Index:      cfg.IndexName,
 					DocumentID: strconv.Itoa(rand.Int()),
 					Body:       bytes.NewReader(lmBytes),
 					Refresh:    "true",

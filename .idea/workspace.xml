@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="084cdf08-d96c-4811-af2f-c55823f8c62a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/kafka/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kafka/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/kafka/source.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/kafka/source.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/main_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +57,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestWritingLogs in github.com/log-service (2)">
-    <configuration name="go build github.com/log-service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="log-service" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/log-service" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestWritingLogs in github.com/log-service (4)">
     <configuration name="TestWritingLogs in github.com/log-service (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="log-service" />
       <working_directory value="$PROJECT_DIR$" />
@@ -78,6 +70,28 @@
       <method v="2" />
     </configuration>
     <configuration name="TestWritingLogs in github.com/log-service (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWritingLogs\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWritingLogs in github.com/log-service (3)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log-service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/log-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestWritingLogs\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestWritingLogs in github.com/log-service (4)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="log-service" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -101,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (4)" />
+        <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (3)" />
         <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (2)" />
         <item itemvalue="Go Test.TestWritingLogs in github.com/log-service (1)" />
         <item itemvalue="Go Test.TestWritingLogs in github.com/log-service" />
-        <item itemvalue="Go Build.go build github.com/log-service" />
       </list>
     </recent_temporary>
   </component>
@@ -121,26 +136,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="375" y="229" width="689" height="671" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1616614205278" />
-    <state width="1398" height="217" key="GridCell.Tab.0.bottom" timestamp="1616934017430">
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom" timestamp="1616945507926">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="217" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616934017430" />
-    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1616887920901" />
-    <state width="1398" height="217" key="GridCell.Tab.0.center" timestamp="1616934017429">
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1616945507926" />
+    <state width="1398" height="325" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1616943498487" />
+    <state width="1398" height="148" key="GridCell.Tab.0.center" timestamp="1616945507925">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="217" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616934017429" />
-    <state width="1398" height="210" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1616887920899" />
-    <state width="1398" height="217" key="GridCell.Tab.0.left" timestamp="1616934017428">
+    <state width="1398" height="148" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1616945507925" />
+    <state width="1398" height="325" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1616943498486" />
+    <state width="1398" height="148" key="GridCell.Tab.0.left" timestamp="1616945507924">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="217" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616934017428" />
-    <state width="1398" height="210" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1616887920898" />
-    <state width="1398" height="217" key="GridCell.Tab.0.right" timestamp="1616934017430">
+    <state width="1398" height="148" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1616945507924" />
+    <state width="1398" height="325" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1616943498485" />
+    <state width="1398" height="148" key="GridCell.Tab.0.right" timestamp="1616945507926">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="217" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616934017430" />
-    <state width="1398" height="210" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1616887920900" />
+    <state width="1398" height="148" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1616945507926" />
+    <state width="1398" height="325" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1616943498486" />
     <state x="229" y="86" key="SettingsEditor" timestamp="1616614207086">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

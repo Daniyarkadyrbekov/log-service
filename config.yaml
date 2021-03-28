@@ -9,3 +9,4 @@ config:
   fetch-min-bytes: 1024
   auto-offset-reset: earliest
 poll-timeout-ms: 100
+index-name: "log-service-index"
