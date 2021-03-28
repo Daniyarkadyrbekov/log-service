@@ -90,18 +90,6 @@ func consumerLoop(ctx context.Context, log *zap.Logger, consumer *kafka.Consumer
 					log.Fatal("cannot revoke partition", zap.Error(err))
 				}
 			case *kafka.Message:
-				//if err := push.Unmarshal(msg.Value); err != nil {
-				//	log.Error("failed to unmarshall push task from kafka", zap.ByteString("value", msg.Value), zap.Error(err))
-				//	continue
-				//}
-				//resp := processor.Send(push)
-				//if notEmpty(resp) {
-				//	invalidations <- resp
-				//}
-				//if _, err := consumer.CommitMessage(msg); err != nil {
-				//	log.Fatal("cannot commit", zap.Error(err))
-				//}
-
 				log.Debug("Consumed message")
 
 				lm := &log_message.LogMessage{}
