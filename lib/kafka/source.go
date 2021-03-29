@@ -38,6 +38,8 @@ func Run(ctx context.Context, log *zap.Logger, config *Config) error {
 	}
 
 	cfg := elasticsearch.Config{
+		Username: config.EsUsername,
+		Password: config.EsPassword,
 		Addresses: []string{
 			config.EsAddress,
 		},

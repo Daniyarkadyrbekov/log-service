@@ -13,6 +13,8 @@ type Config struct {
 	RequestsTopic string          `mapstructure:"requests-topic"`
 	IndexName     string          `mapstructure:"index-name"`
 	EsAddress     string          `mapstructure:"es-address"`
+	EsUsername    string          `mapstructure:"es-username"`
+	EsPassword    string          `mapstructure:"es-password"`
 	Brokers       []string        `mapstructure:"brokers"`
 	GroupID       string          `mapstructure:"group-id"`
 	ConfigMap     kafka.ConfigMap `mapstructure:"config"`
