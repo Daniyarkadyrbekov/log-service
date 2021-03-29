@@ -1,4 +1,4 @@
 .PHONY: build
 build:
-	go build -o /root/go/services/log-service/service main.go
+	go build -o /root/go/services/log-service/log-service main.go
 
